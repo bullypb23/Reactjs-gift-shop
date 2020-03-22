@@ -1,0 +1,189 @@
+.Content {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.Icons {
+    flex: 1 1 5%;
+}
+
+.Icon {
+    background-color: rgba(238,174,202,0.5);
+    transition: 0.5s;
+}
+
+.Icon a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Icon:hover {
+    transform: scale(1.1)
+}
+
+.Icon img {
+    width: 80%;
+    height: 80%;
+}
+
+.ProductImage {
+    position: relative;
+    margin: 30px 0;
+    padding: 10px;
+    flex: 1 1 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+}
+
+.ProductImage div {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ProductImage div img:first-child {
+    height: 400px;
+}
+
+.ProductImage div img:last-child {
+    height: 150px;
+    position: absolute;
+    /* right: 25%; */
+    bottom: 20%;
+    z-index: 10;
+    display: none;
+}
+
+.ProductImage div h3 {
+    position: absolute;
+    top: 22%;
+    font-size: 2.5rem;
+}
+
+.ProductImage div h2 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.SvgContainer {
+    position: relative;
+    right: 2%;
+    padding: 5px;
+    height: 410px;
+    flex-basis: 400px;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 599px) {
+    .Content {
+        flex-direction: column;
+    }
+
+    .Icons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Icon {
+        max-width: 60px;
+        margin: 0 2.5px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 100%;
+        height: 60px;
+    }
+
+    .ProductImage {
+        height: 55%;
+    }
+
+    .ProductImage div h3 {
+        top: 18%;
+    }
+
+    .ProductImage div img:first-child {
+        height: 300px;
+    }
+
+    .ProductImage div img:last-child {
+        height: 100px;
+        bottom: 25%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .Content {
+        flex-direction: column;
+    }
+
+    .Icons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Icon {
+        max-width: 60px;
+        margin: 0 2.5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 100%;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Content {
+        flex-direction: row;
+    }
+
+    .Icons {
+        flex-basis: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .Icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 5px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .ProductImage {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .ProductImage {
+        flex-basis: 55%;
+    }
+}

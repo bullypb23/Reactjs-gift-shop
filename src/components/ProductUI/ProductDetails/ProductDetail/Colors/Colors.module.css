@@ -1,0 +1,85 @@
+.Colors {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.Colors h2 {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.Wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.Color {
+    border-radius: 50%;
+    border: 1px solid #555;
+    margin: 5px;
+    background-color: hotpink;
+    cursor: pointer;
+}
+
+.Wrapper .Color:nth-child(1) {
+    background-color: #fff;
+}
+.Wrapper .Color:nth-child(2) {
+    background-color: #000;
+}
+.Wrapper .Color:nth-child(3) {
+    background-color: #ff0000;
+}
+.Wrapper .Color:nth-child(4) {
+    background-color: pink;
+}
+.Wrapper .Color:nth-child(5) {
+    background-color: blue;
+}
+.Wrapper .Color:nth-child(6) {
+    background-color: grey;
+}
+.Wrapper .Color:nth-child(7) {
+    background-color: yellow;
+}
+.Wrapper .Color:nth-child(8) {
+    background-color: rgb(107, 70, 70);
+}
+
+@media screen and (max-width: 599px) {
+    .Wrapper {
+        flex-wrap: wrap;
+    }
+
+    .Color {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .Wrapper {
+        flex-wrap: wrap;
+    }
+
+    .Color {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Wrapper {
+        flex-wrap: wrap;
+    }
+
+    .Color {
+        width: 40px;
+        height: 40px;
+    }
+}

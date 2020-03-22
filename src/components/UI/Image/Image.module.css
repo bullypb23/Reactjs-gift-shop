@@ -1,0 +1,10 @@
+.Image {
+    padding: 10px;
+    flex: 1 1 50%;
+}
+
+.Image img {
+    height: 200px;
+    transform: rotateZ(-5deg);
+    transition: 0.7s all ease-in-out;
+}

@@ -1,0 +1,185 @@
+.Contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Banner {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    text-align: center;
+}
+
+.Banner h2 {
+    margin: 0;
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.Banner p {
+    font-size: 1.2rem;
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+
+.Wrapper {
+    width: 60%;
+    position: relative;
+    height: auto;
+    display: flex;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.Form {
+    flex: 1 1 60%;
+}
+
+.Submit {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: rgb(197, 77, 77);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.Submit:hover {
+    background-color: rgb(231, 102, 102);
+}
+
+.ContactDetails {
+    flex: 1 1 40%;
+    border-left: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 30px 10px;
+}
+
+.Div1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Div1 h2 {
+    font-size: 1.7rem;
+}
+
+.Logo {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Logo img {
+    width: 100px;
+    height: 100%;
+}
+
+.Div2 {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.Submit:disabled {
+    background-color: grey;
+}
+
+@media screen and (max-width: 599px) {
+    .Banner h2 {
+        font-size: 3rem;
+    }
+
+    .Wrapper {
+        flex-direction: column;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .ContactDetails {
+        border: none;
+    }
+
+    .Div1 {
+        padding-top: 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .Div2 {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .Banner h2 {
+        font-size: 3rem;
+    }
+
+    .Wrapper {
+        flex-direction: column;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .ContactDetails {
+        border: none;
+    }
+
+    .Div1 {
+        padding-top: 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .Div2 {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Wrapper {
+        flex-direction: row;
+        width: 80%;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .ContactDetails {
+        border-left: 1px solid #ccc;
+    }
+
+    .Div1 {
+        padding-top: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+    }
+
+    .Div2 {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .Wrapper {
+        width: 60%;
+    }
+}

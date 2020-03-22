@@ -1,0 +1,108 @@
+.BasketItem {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #bbb;
+    /* margin-bottom: 5px; */
+    padding: 5px 0;
+}
+
+.ImageBox {
+    flex-basis: 20%;
+    /* padding: 10px; */
+    height: 150px;
+    display: flex;
+}
+
+.ImageBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.Information {
+    padding: 10px;
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.Information h2 {
+    color: rgba(148,187,233,1);
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+.Price {
+    flex-basis: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.Price div {
+    flex-basis: 100%;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.Price div:hover {
+    transform: scale(1.1);
+}
+
+.Price h2 {
+    color: rgb(197, 77, 77);
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 599px) {
+    .ImageBox {
+        flex-basis: 35%;
+        display: flex;
+        align-items: center;
+    }
+
+    .ImageBox img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .Information {
+        flex-basis: 35%;
+    }
+
+    .Price {
+        flex-basis: 30%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .ImageBox {
+        flex-basis: 25%;
+    }
+
+    .Information {
+        flex-basis: 45%;
+    }
+
+    .Price {
+        flex-basis: 30%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .ImageBox {
+        flex-basis: 20%;
+    }
+
+    .Information {
+        flex-basis: 50%;
+    }
+
+    .Price {
+        flex-basis: 30%;
+    }
+}

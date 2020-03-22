@@ -1,0 +1,25 @@
+.Name {
+    flex: 1 1;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.Name h2 {
+    font-size: 1.5rem;
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .Name {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Name {
+        flex-basis: 50%;
+    }
+}

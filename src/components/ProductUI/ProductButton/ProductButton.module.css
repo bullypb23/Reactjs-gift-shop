@@ -1,0 +1,41 @@
+.ProductButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.ProductButton button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: rgb(197, 77, 77);
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ProductButton button:hover {
+    background-color: rgb(231, 102, 102);
+}
+
+@media screen and (max-width: 599px) {
+    .ProductButton button {
+        flex-basis: 40%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .ProductButton button {
+        flex-basis: 35%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .ProductButton button {
+        flex-basis: 20%;
+    }
+}

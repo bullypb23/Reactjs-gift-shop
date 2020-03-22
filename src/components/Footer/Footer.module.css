@@ -1,0 +1,105 @@
+.Footer {
+    width: 100%;
+    background-color: rgb(90, 84, 84);
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 100px;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.Info {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Info h2,
+.Social h2 {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.Info div {
+    /* flex-basis: 50%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.Info div a {
+    display: block;
+    margin-right: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.Info div a:hover {
+    color: rgba(148,187,233,1);
+}
+
+.Social {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.Social div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Social div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(148,187,233,1);
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 5px;
+    width: 40px;
+}
+
+.Social div a {
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 599px) {
+    .Footer {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 50px;
+    }
+
+    .Info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Info div a {
+        margin: 0 15px;
+    }
+
+    .Info div a:hover {
+        color: white;
+    }
+
+    .Social {
+        justify-content: center;
+        align-items: center;
+    }
+}

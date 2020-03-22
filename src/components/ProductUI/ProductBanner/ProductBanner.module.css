@@ -1,0 +1,21 @@
+.Banner {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    text-align: center;
+}
+
+.Banner h2 {
+    margin: 0;
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.Banner p {
+    font-size: 1.2rem;
+    width: 70%;
+    position: relative;
+    left: 15%;
+}

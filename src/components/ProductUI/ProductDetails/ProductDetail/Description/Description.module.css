@@ -1,0 +1,19 @@
+.Description {
+    flex: 1 1;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    /* border: 1px solid #000; */
+}
+
+.Description h2 {
+    font-size: 1.5rem;
+    padding: 0 20px;
+}
+
+.Description p {
+    padding: 5px;
+    text-align: left;
+}
