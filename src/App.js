@@ -57,7 +57,8 @@ class App extends Component {
 			}
 		});
 		if (updatedBasketIDs.length === 0) {
-			this.setState({isItemAdded: false})
+			this.setState({isItemAdded: false});
+			this.props.history.push('/')
 		}
 	}
 
